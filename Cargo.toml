@@ -10,7 +10,7 @@ keywords = ["gui", "iced", "fonts"]
 categories = ["gui"]
 rust-version = "1.80"
 readme = "README.md"
-authors = [ "Redhawk18" ]
+authors = ["Redhawk18"]
 
 [features]
 default = ["required"]
@@ -20,13 +20,7 @@ nerd = []
 full = ["bootstrap", "nerd"]
 
 [dependencies]
-iced_core.workspace = true
-
-[workspace.dependencies]
-iced_core = "0.13"
-
-[patch.crates-io]
-# iced_core = { git = "https://github.com/iced-rs/iced.git" }
+iced_core = { git = "https://github.com/iced-rs/iced.git" }
 
 [package.metadata.docs.rs]
 features = ["required", "full"]
